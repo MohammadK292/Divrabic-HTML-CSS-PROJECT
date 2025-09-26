@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="desc" />
+    <link rel="stylesheet" href="style.css">
+    <title>MohammadKaadan Portfolio</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">Mohammad Kaadan</h1>
+      <nav class="header__nav-list">
+        <ul class="nav-list">
+          <li><a class="nav-list__link nav-list__link--active" href="#">Home</a></li>
+          <li><a class="nav-list__link"href="#about">AboutMe</a></li>
+          <li><a class="nav-list__link" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-list__link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="about" id="about">
+        <h2 class="about__title">About Me</h2>
+        <p class="about__text">
+          Fresh Computer Science graduate eager to apply academic knowledge and
+          project experience in internships or entry-level roles.
+        </p>
+        <p class="about__text">
+          Open to any opportunities where I can contribute, learn, and grow as a
+          developer. Motivated to gain real-world experience and continuously
+          improve my skills.
+        </p>
+      </section>
+
+      <section class="portfolio" id="portfolio">
+        <h2 class="portfolio__title">My portfolio</h2>
+        <div class="portfolio__cards">
+        
+        <div class="project">
+          <img class="project__image" src="images/diabetes.jpg" alt="project" />
+          <h3 class="project__title">Diabetes Detection Project (Machine Learning)</h3>
+          <p class="project__description">
+            Developed a Python-based prediction model to classify diabetes
+            likelihood using health metrics.
+          </p>
+          <button class="project__button">View Project</button>
+        </div>
+
+        <div class="project">
+          <img class="project__image"  src="images/skillswap.png" alt="project" />
+          <h3 class="project__title">SkillSwap Platform (Web Development)</h3>
+          <p class="project__description">
+            Create a PHP based platform with authentication and messaging for
+            skill exchange
+          </p>
+          <button class="project__button">View Project</button>
+        </div>
+
+        <div class="project">
+          <img  class="project__image"src="images/park.jpg" alt="project" />
+          <h3 class="project__title">Smart Car Parking System (Robotics)</h3>
+          <p class="project__description">
+            Build a prototype using sensors and motors to detect car and
+            automatically open gates .
+          </p>
+          <button  class="project__button">View Project</button>
+        </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <h2 class="contact__title">Contact Me</h2>
+        <form class="contact__form">
+          <label  class="contact__label"  for="name">Name:</label>
+          <input class="contact__input" type="text" id="name" required />
+          <br/>
+          <br />
+          <label class="contact__label"  for="email">Email:</label>
+          <input class="contact__input" type="email" id="email" required />
+           <br/>
+          <br />
+
+          <label class="contact__label" for="message">Message:</label>
+          <textarea  class="contact__textarea" name="message" id="message" rows="4"></textarea>
+
+           <br/>
+          <br />
+          <input class="contact__submit" type="submit" value="Send Message">
+
+        </form>
+        
+      </section>
+    </main>
+    <footer class="footer">
+      <p>&copy; Mohammad Kaadan's Portfolio</p>
+    </footer>
+  </body>
+</html>
